@@ -1,0 +1,11 @@
+{
+  "product": "ai-ready-suite-max",
+  "name": "AI Ready Suite MAX",
+  "nameZh": "AI 就绪工具套件 MAX",
+  "version": "1.0.0",
+  "releaseDate": "2026-07-26",
+  "status": "public-preview",
+  "description": "Enterprise-grade design system AI readiness engine with composition reasoning.",
+  "descriptionZh": "企业级设计系统 AI 就绪引擎，包含组件组合关系推理能力。",
+  "author": "想象一片森林"
+}

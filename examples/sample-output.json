@@ -1,0 +1,86 @@
+{
+  "_note": "此样例为虚构数据。组件名称、场景均为匿名示例，不涉及任何真实客户或设计系统。",
+  "_generated_by": "MAX Composition Reasoning Engine",
+  "_disclaimer": "输出格式仅为能力演示。完整规则引擎和推理算法为专有资产。",
+
+  "input": {
+    "component": "DataDashboard",
+    "scenario": "运营监控 > 设备状态概览",
+    "context": "需要在一个 1440px 宽的面板中，展示设备运行状态、关键指标和异常告警"
+  },
+
+  "reasoning": {
+    "approach": "基于场景标签匹配 + 组合规则约束，从 2,340 个组件中筛选推荐",
+    "filters_applied": [
+      "场景标签: 运营监控",
+      "容器类型: 面板",
+      "宽度适配: 1440px"
+    ]
+  },
+
+  "results": {
+    "recommended_combination": [
+      {
+        "slot": "header",
+        "component": "PanelHeader",
+        "confidence": 0.94,
+        "reason": "场景匹配 + 容器类型一致"
+      },
+      {
+        "slot": "primary_metrics",
+        "component": "MetricCardGroup",
+        "confidence": 0.91,
+        "reason": "监控场景高频使用（同类场景中 87% 采用）",
+        "suggested_children": [
+          { "component": "MetricCard", "variant": "large", "for": "核心指标 ×3" }
+        ]
+      },
+      {
+        "slot": "chart_area",
+        "component": "ChartCard",
+        "confidence": 0.88,
+        "reason": "设备监控场景下图表是必选组件",
+        "suggested_children": [
+          { "component": "LineChart", "variant": "multiSeries", "for": "历史趋势" },
+          { "component": "BarChart", "variant": "stacked", "for": "分类统计" }
+        ]
+      },
+      {
+        "slot": "alert_zone",
+        "component": "AlertList",
+        "confidence": 0.85,
+        "reason": "监控场景必然包含告警信息",
+        "suggested_children": [
+          { "component": "AlertItem", "variant": "compact" }
+        ]
+      },
+      {
+        "slot": "footer",
+        "component": "PanelFooter",
+        "confidence": 0.92,
+        "reason": "面板类容器必须包含底部区域"
+      }
+    ],
+
+    "validated": {
+      "nesting_correct": true,
+      "scenario_match": true,
+      "width_constraint_satisfied": true,
+      "rules_checked": 17,
+      "rules_violated": 0
+    }
+  },
+
+  "alternative_combinations": [
+    {
+      "scenario": "运营监控 > 设备详情",
+      "confidence": 0.72,
+      "note": "如果将页面用途改为设备详情页，推荐组合会调整为 DetailPanel + PropertyTable + Timeline"
+    },
+    {
+      "scenario": "运营监控 > 数据报告",
+      "confidence": 0.65,
+      "note": "如果侧重数据导出和报告，推荐组合调整为 ReportTemplate + DataTable + ExportBar"
+    }
+  ]
+}
