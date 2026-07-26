@@ -59,4 +59,4 @@ MAX（组合推理引擎）
 
 ---
 
-[← 返回首页](../README.md)
+[← 返回首页](🏬/ai-ready-suite-max-public/README.md)

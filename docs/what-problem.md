@@ -42,4 +42,4 @@ MAX 做的事情就是在组件数据之上，增加一个组合规则推理层�
 
 ---
 
-[← 返回首页](../README.md)
+[← 返回首页](🏬/ai-ready-suite-max-public/README.md)

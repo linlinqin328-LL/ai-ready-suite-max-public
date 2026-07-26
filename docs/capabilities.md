@@ -51,4 +51,4 @@ MAX 包含 Suite 的全部评估能力（AI 就绪度诊断、组件数据审计
 
 ---
 
-[← 返回首页](../README.md)
+[← 返回首页](🏬/ai-ready-suite-max-public/README.md)

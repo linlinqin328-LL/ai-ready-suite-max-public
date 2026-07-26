@@ -38,11 +38,11 @@
 
 ## 了解更多
 
-- [MAX 解决了什么问题](./docs/what-problem.md) — 一页纸说清楚痛点
-- [能力详情](./docs/capabilities.md) — 场景化的能力描述
-- [Suite vs MAX 对比](./docs/vs-suite.md) — 详细对比表
-- [企业 FAQ](./docs/enterprise-faq.md) — 决策者关心的 10 个问题
-- [输出样例](./examples/sample-output.json) — 匿名化的推理输出示例
+- [MAX 解决了什么问题](what-problem.md) — 一页纸说清楚痛点
+- [能力详情](capabilities.md) — 场景化的能力描述
+- [Suite vs MAX 对比](vs-suite.md) — 详细对比表
+- [企业 FAQ](enterprise-faq.md) — 决策者关心的 10 个问题
+- [输出样例](sample-output.json) — 匿名化的推理输出示例
 
 ---
 
@@ -50,4 +50,4 @@
 
 专有软件。组合规则推理引擎为闭源资产。
 
-商务咨询：3539739951@qq.com
+商务咨询：Open an issue on GitHub
